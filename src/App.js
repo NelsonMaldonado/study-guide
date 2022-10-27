@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css"
+import { Container } from "@mui/system"
+import { Button } from "@mui/material"
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Container>
+          {" "}
+          Software Engineer Study Guides
+          <br />
+          <h6>By Nelson Maldonado</h6>
+          <Button variant="contained">Save</Button>
+          <Button variant="contained">Discard</Button>
+        </Container>
       </header>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
