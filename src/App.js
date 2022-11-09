@@ -1,6 +1,8 @@
 import "./App.css"
 import { Container } from "@mui/system"
-import { Button } from "@mui/material"
+
+import LoginForm from "./components/LoginForm"
+import TypeInForm from "./components/TypeInForm"
 
 function App() {
   return (
@@ -8,11 +10,10 @@ function App() {
       <header className="App-header">
         <Container>
           {" "}
-          Software Engineer Study Guides
-          <br />
+          Software Engineer Study Guide
           <h6>By Nelson Maldonado</h6>
-          <Button variant="contained">Save</Button>
-          <Button variant="contained">Discard</Button>
+          <LoginForm />
+          <TypeInForm />
         </Container>
       </header>
     </div>
