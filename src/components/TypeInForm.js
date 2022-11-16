@@ -1,6 +1,16 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { Button } from "@mui/material"
 import { Container } from "@mui/system"
+
+useEffect(() => {
+  axios("http://localhost:4000/list")
+    .then((res) => {
+      console.log(res.data)
+    })
+    .catch((err) => {
+      console.error(err)
+    })
+}, [])
 
 const TypeInForm = () => {
   const [formData, setformData] = useState()
